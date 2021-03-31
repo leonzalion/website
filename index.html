@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Poppins;
+      }
+
+      .page__container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .selfie__image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        border-radius: 50%;
+      }
+
+      .name {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: lighter;
+      }
+
+      .slogan__link {
+        color: black;
+      }
+
+      .slogan__link:hover {
+        color: gray;
+      }
+
+      .links {
+        margin-top: 0.6rem;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 3px;
+        margin-left: 3px;
+      }
+
+      .link:hover {
+        opacity: 0.7;
+      }
+
+      .link__logo {
+        box-sizing: border-box;
+        width: 30px;
+      }
+
+      .link__link {
+        margin-left: auto;
+        color: black;
+      }
+
+      .link__link:hover {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page__container">
+      <div class="selfie">
+        <img class="selfie__image" src="selfie.jpeg" height="500" />
+      </div>
+
+      <div class="name">Leon Si (@leonzalion)</div>
+
+      <div class="slogan">
+        Aspiring Ultralearner / Developer of Tabulo
+        <div style="flex-direction: row; display: flex">
+          <span>(</span>
+          <a href="https://tabulo.app" class="slogan__link">www.tabulo.app</a>
+          <span>)</span>
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="link">
+          <a href="https://github.com/leonzalion" class="link__link">
+            <img src="github.png" class="link__logo" />
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="https://linkedin.com/leonzalion" class="link__link">
+            <img src="linkedin.png" class="link__logo" />
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="https://wakatime.com/@leonzalion" class="link__link">
+            <img src="wakatime.png" class="link__logo" style="padding: 2px" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
